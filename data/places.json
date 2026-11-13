@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "note": "場所の定義。場所を足すときは、ここに1件足し、quizzes.json に問題、looks.json にルック、witch-lines.json の places にあいさつ、assets/ に画像を足す。map.x / map.y はマップ画面での位置（%）。enabled:false にすると、マップで「じゅんびちゅう」になり入れない。",
+  "characters": [
+    {
+      "id": "midori",
+      "name": "みーちゃん",
+      "mode": "normal",
+      "base": "midori_s0",
+      "color": "#5b6fd6"
+    },
+    {
+      "id": "hikari",
+      "name": "ひーちゃん",
+      "mode": "hiichan",
+      "base": "ref_hikari",
+      "color": "#ef7fa8"
+    }
+  ],
+  "places": [
+    {
+      "id": "mushi",
+      "name": "むしの もり",
+      "genre": "むし",
+      "theme": "おねえさん",
+      "icon": "🐞",
+      "bg": "bg_mushi",
+      "color": "#7cbf62",
+      "map": { "x": 18, "y": 34 },
+      "enabled": true
+    },
+    {
+      "id": "dobutsu",
+      "name": "どうぶつの おしろ",
+      "genre": "どうぶつ",
+      "theme": "プリンセス",
+      "icon": "🐰",
+      "bg": "bg_dobutsu",
+      "color": "#f3a3c0",
+      "map": { "x": 50, "y": 24 },
+      "enabled": true
+    },
+    {
+      "id": "shokubutsu",
+      "name": "おはなの にわ",
+      "genre": "しょくぶつ",
+      "theme": "おはなの ようせい",
+      "icon": "🌷",
+      "bg": "bg_shokubutsu",
+      "color": "#f2b84b",
+      "map": { "x": 18, "y": 72 },
+      "enabled": true
+    },
+    {
+      "id": "hoshi",
+      "name": "おほしさま てんもんだい",
+      "genre": "ほし",
+      "theme": "ほしぞらの まほうつかい",
+      "icon": "⭐",
+      "bg": "bg_hoshi",
+      "color": "#5a68b8",
+      "map": { "x": 80, "y": 32 },
+      "enabled": true
+    },
+    {
+      "id": "ryori",
+      "name": "おりょうり キッチン",
+      "genre": "りょうり",
+      "theme": "パティシエ",
+      "icon": "🍰",
+      "bg": "bg_ryori",
+      "color": "#e28f6c",
+      "map": { "x": 82, "y": 72 },
+      "enabled": true
+    }
+  ]
+}

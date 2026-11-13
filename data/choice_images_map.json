@@ -1,0 +1,154 @@
+{
+ "mushi-02": {
+  "answer": "choice_aomushi",
+  "wrong": "choice_otamajakushi"
+ },
+ "mushi-03": {
+  "answer": "choice_kinojuekii",
+  "wrong": "choice_happa"
+ },
+ "mushi-07": {
+  "answer": "choice_hananomitsu",
+  "wrong": "choice_mizuumi"
+ },
+ "mushi-11": {
+  "answer": "choice_spider_web_fly",
+  "wrong": "choice_sakana"
+ },
+ "mushi-15": {
+  "answer": "choice_pillbug_guard",
+  "wrong": "choice_pillbug_roll"
+ },
+ "mushi-19": {
+  "answer": "choice_kusa",
+  "wrong": "choice_oniku"
+ },
+ "mushi-21": {
+  "answer": "choice_butterfly_sip",
+  "wrong": "choice_butterfly_sleep"
+ },
+ "dobutsu-01": {
+  "answer": "choice_penguin",
+  "wrong": "choice_zou"
+ },
+ "dobutsu-05": {
+  "answer": "choice_sasa",
+  "wrong": "choice_oniku"
+ },
+ "dobutsu-08": {
+  "answer": "choice_kangaroo_pouch",
+  "wrong": "choice_treetop"
+ },
+ "dobutsu-13": {
+  "answer": "choice_chameleon",
+  "wrong": "choice_zou"
+ },
+ "dobutsu-15": {
+  "answer": "choice_arctic",
+  "wrong": "choice_desert"
+ },
+ "dobutsu-16": {
+  "answer": "choice_cheetah",
+  "wrong": "choice_zou"
+ },
+ "dobutsu-19": {
+  "answer": "choice_neko",
+  "wrong": "choice_penguin"
+ },
+ "dobutsu-24": {
+  "answer": "choice_bluewhale",
+  "wrong": "choice_zou"
+ },
+ "shokubutsu-01": {
+  "answer": "choice_futaba",
+  "wrong": "choice_wakaba"
+ },
+ "shokubutsu-02": {
+  "answer": "choice_morning",
+  "wrong": "choice_noon"
+ },
+ "shokubutsu-03": {
+  "answer": "choice_ohisama",
+  "wrong": "choice_tsuki"
+ },
+ "shokubutsu-07": {
+  "answer": "choice_spring",
+  "wrong": "choice_summer"
+ },
+ "shokubutsu-11": {
+  "answer": "choice_dandelion_fluff",
+  "wrong": "choice_dandelion_wings"
+ },
+ "shokubutsu-12": {
+  "answer": "choice_desert",
+  "wrong": "choice_snowland"
+ },
+ "shokubutsu-18": {
+  "answer": "choice_autumn",
+  "wrong": "choice_spring"
+ },
+ "shokubutsu-25": {
+  "answer": "choice_flytrap_fly",
+  "wrong": "choice_sakana"
+ },
+ "hoshi-05": {
+  "answer": "choice_fullmoon",
+  "wrong": "choice_newmoon"
+ },
+ "hoshi-08": {
+  "answer": "choice_saturn",
+  "wrong": "choice_mars"
+ },
+ "hoshi-12": {
+  "answer": "choice_space",
+  "wrong": "choice_underwater"
+ },
+ "hoshi-17": {
+  "answer": "choice_dango",
+  "wrong": "choice_curry"
+ },
+ "hoshi-23": {
+  "answer": "choice_moon_rabbit",
+  "wrong": "choice_neko"
+ },
+ "hoshi-24": {
+  "answer": "choice_earth",
+  "wrong": "choice_mars"
+ },
+ "ryori-04": {
+  "answer": "choice_hotwater",
+  "wrong": "choice_ice"
+ },
+ "ryori-09": {
+  "answer": "choice_tomato",
+  "wrong": "choice_strawberry"
+ },
+ "ryori-10": {
+  "answer": "choice_hands_wash",
+  "wrong": "choice_sneakers"
+ },
+ "ryori-16": {
+  "answer": "choice_corn",
+  "wrong": "choice_rice"
+ },
+ "ryori-17": {
+  "answer": "choice_turner",
+  "wrong": "choice_ladle"
+ },
+ "ryori-20": {
+  "answer": "choice_honeybee",
+  "wrong": "choice_butterfly"
+ },
+ "ryori-21": {
+  "answer": "choice_lemon",
+  "wrong": "choice_sugar"
+ },
+ "ryori-22": {
+  "answer": "choice_itadakimasu",
+  "wrong": "choice_gochisosama"
+ },
+ "ryori-24": {
+  "answer": "choice_cow",
+  "wrong": "choice_pig"
+ }
+}

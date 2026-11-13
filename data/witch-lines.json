@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "note": "かーちゃん魔女のセリフ。face は表情（faces の名前）。{place} は場所の名前に、{n} は数に置きかわる。同じ場面に複数あるときは、その中から1つを無作為に選ぶ。normal=通常モード、hiichan=ひーちゃんモード（いじわるなセリフは入れない）。onaraChance は「おならぶー！」が出る確率。",
+  "onaraChance": 0.125,
+  "faces": {
+    "normal": "witch_01_normal",
+    "iji": "witch_02_iji",
+    "kuyashii": "witch_03_kuyashii",
+    "onara": "witch_04_onara",
+    "warai": "witch_05_warai"
+  },
+  "modes": {
+    "normal": {
+      "entrance": [
+        { "text": "ここは {place} よ。わたしの クイズに こたえられるかしら？", "face": "normal" }
+      ],
+      "beforeQuestion": [
+        { "text": "つぎの もんだいよ。よく きいてね。", "face": "normal" },
+        { "text": "さあ、つぎの もんだいよ。わかるかしら？", "face": "iji" }
+      ],
+      "firstQuestion": [
+        { "text": "では、いくわよ。よく きいてね。", "face": "normal" }
+      ],
+      "correct": [
+        { "text": "あら、やるじゃない！", "face": "kuyashii" },
+        { "text": "ふふん、せいかいよ。くやしいわ。", "face": "kuyashii" },
+        { "text": "むむっ、せいかい！ なかなか やるわね。", "face": "kuyashii" }
+      ],
+      "correctRetry": [
+        { "text": "せいかい！ よく かんがえたわね。", "face": "normal" }
+      ],
+      "wrong": [
+        { "text": "ふふっ、ざんねん！ もういちど どうぞ。", "face": "iji" },
+        { "text": "ふふっ、ちがうわよ。もういちど どうぞ。", "face": "iji" }
+      ],
+      "hint": [
+        { "text": "ヒントを あげるわ。よく かんがえてね。", "face": "iji" }
+      ],
+      "idle": [
+        { "text": "どれに するの？ ゆっくり かんがえて いいのよ。", "face": "normal" },
+        { "text": "うふふ、まよって いるわね。", "face": "iji" }
+      ],
+      "tap": [
+        { "text": "なあに？ わたしに みとれちゃった？", "face": "iji" },
+        { "text": "くすぐったいわ！", "face": "warai" },
+        { "text": "わたしは かーちゃん まじょ よ。", "face": "normal" }
+      ],
+      "rewardNew": [
+        { "text": "しかたないわね。あたらしい ドレスを あげるわ。", "face": "kuyashii" }
+      ],
+      "rewardNone": [
+        { "text": "つぎは もっと あたるかしら？ また きてね。", "face": "iji" }
+      ],
+      "rewardSpecial": [
+        { "text": "まさか！ とくべつな ドレスまで…！ くやしいけど、すてきよ。", "face": "kuyashii" }
+      ],
+      "dressup": [
+        { "text": "すきな ドレスを えらんでね。", "face": "normal" }
+      ],
+      "afterDressup": [
+        { "text": "まあ、すてき…！ とっても にあうわ。", "face": "warai" },
+        { "text": "あら、かわいい！ わたしも きてみたいわ。", "face": "warai" }
+      ],
+      "ohirome": [
+        { "text": "はい、ポーズ！ きょうも すてきよ。", "face": "warai" }
+      ],
+      "bye": [
+        { "text": "また あそびに いらっしゃい。つぎは まけないわよ！", "face": "iji" }
+      ]
+    },
+    "hiichan": {
+      "entrance": [
+        { "text": "ここは {place} よ。いっしょに クイズで あそびましょう。", "face": "warai" }
+      ],
+      "beforeQuestion": [
+        { "text": "つぎの もんだいよ。いっしょに きいてね。", "face": "normal" }
+      ],
+      "firstQuestion": [
+        { "text": "では、もんだいよ。どっちかな？", "face": "normal" }
+      ],
+      "correct": [
+        { "text": "わあ、すごいわ！", "face": "warai" },
+        { "text": "せいかい！ じょうずね。", "face": "warai" }
+      ],
+      "correctRetry": [
+        { "text": "わあ、すごいわ！", "face": "warai" }
+      ],
+      "wrong": [
+        { "text": "いいわね、いっしょに みてみましょう。", "face": "normal" }
+      ],
+      "hint": [
+        { "text": "キラキラ ひかって いるのは どれかな？", "face": "normal" }
+      ],
+      "idle": [
+        { "text": "どっちかな？ すきな ほうを おしてね。", "face": "normal" }
+      ],
+      "tap": [
+        { "text": "うふふ、くすぐったいわ。", "face": "warai" },
+        { "text": "なあに？ いっしょに あそぼうね。", "face": "warai" }
+      ],
+      "rewardNew": [
+        { "text": "がんばったわね！ あたらしい ドレスよ。", "face": "warai" }
+      ],
+      "rewardNone": [
+        { "text": "がんばったわね！ また あそぼうね。", "face": "warai" }
+      ],
+      "rewardSpecial": [
+        { "text": "わあ！ とくべつな ドレスよ。キラキラね！", "face": "warai" }
+      ],
+      "dressup": [
+        { "text": "どの ドレスに する？", "face": "warai" }
+      ],
+      "afterDressup": [
+        { "text": "まあ、すてき…！ とっても にあうわ。", "face": "warai" }
+      ],
+      "ohirome": [
+        { "text": "はい、ポーズ！ かわいいわね。", "face": "warai" }
+      ],
+      "bye": [
+        { "text": "また いっしょに あそぼうね。", "face": "warai" }
+      ]
+    }
+  },
+  "onara": [
+    { "text": "おならぶー！", "face": "onara" }
+  ],
+  "onaraAfter": [
+    { "text": "あら、しつれい！ うふふふ。", "face": "warai" },
+    { "text": "でちゃった！ みんなで わらいましょう。", "face": "warai" },
+    { "text": "いまの、きこえちゃった？ あはは！", "face": "warai" }
+  ],
+  "places": {
+    "mushi": {
+      "normal": [{ "text": "むしたちが かくれんぼ して いる もりよ。", "face": "normal" }],
+      "hiichan": [{ "text": "ちょうちょや てんとうむしが いる もりよ。", "face": "warai" }]
+    },
+    "dobutsu": {
+      "normal": [{ "text": "どうぶつたちの すてきな おしろへ ようこそ。", "face": "normal" }],
+      "hiichan": [{ "text": "どうぶつさんが いっぱいの おしろよ。", "face": "warai" }]
+    },
+    "shokubutsu": {
+      "normal": [{ "text": "おはなが いっぱい さいて いる にわよ。", "face": "normal" }],
+      "hiichan": [{ "text": "きれいな おはなが さいて いるわね。", "face": "warai" }]
+    },
+    "hoshi": {
+      "normal": [{ "text": "よぞらの おほしさまを みる ところよ。", "face": "normal" }],
+      "hiichan": [{ "text": "おほしさまが キラキラ ひかって いるわね。", "face": "warai" }]
+    },
+    "ryori": {
+      "normal": [{ "text": "おいしい においが する キッチンよ。", "face": "normal" }],
+      "hiichan": [{ "text": "あまくて おいしい においが するわね。", "face": "warai" }]
+    }
+  }
+}
