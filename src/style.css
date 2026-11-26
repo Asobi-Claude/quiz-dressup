@@ -19,6 +19,7 @@
 * { box-sizing: border-box; }
 html, body {
   margin: 0; height: 100%; overflow: hidden;
+  position: fixed; inset: 0; width: 100%;
   background: #3a2b4d;
   font-family: var(--font);
   color: var(--ink);
@@ -38,7 +39,7 @@ img { -webkit-user-drag: none; }
 #backdrop .bg-name { display: none; }
 
 #stage {
-  position: absolute; left: 50%; top: 50%;
+  position: fixed; left: 50%; top: 50%; /* 見えている範囲の真ん中に置く（absolute だと、ツールバーが出ているタブレットで下がずれる） */
   width: 1280px; height: 720px;
   transform-origin: center center;
   overflow: hidden;

@@ -47,8 +47,10 @@ class App {
     this.backdrop = document.getElementById('backdrop');
     this.applySettings();
     this.fit();
-    window.addEventListener('resize', () => this.fit());
-    window.addEventListener('orientationchange', () => setTimeout(() => this.fit(), 200));
+    const refit = () => this.fit();
+    window.addEventListener('resize', refit);
+    window.addEventListener('orientationchange', () => { [100, 300, 800].forEach((ms) => setTimeout(refit, ms)); }); // 回したあと、タブレットが古い大きさを返すことがある
+    window.visualViewport?.addEventListener('resize', refit); // アドレスバー・ツールバーの出入り
   }
 
   get mode() { return modeOf(this.game, this.charId); }
@@ -80,7 +82,10 @@ class App {
 
   /** 舞台（1280×720）を画面に合わせて拡大・縮小する */
   fit() {
-    const s = Math.min(window.innerWidth / STAGE_W, window.innerHeight / STAGE_H);
+    const vv = window.visualViewport;
+    const w = vv?.width || window.innerWidth;
+    const h = vv?.height || window.innerHeight;
+    const s = Math.min(w / STAGE_W, h / STAGE_H);
     this.stage.style.transform = `translate(-50%, -50%) scale(${s})`;
     document.documentElement.style.setProperty('--stage-scale', s);
   }
