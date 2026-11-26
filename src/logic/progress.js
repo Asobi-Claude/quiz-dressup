@@ -3,25 +3,40 @@
 //
 // 形:
 // {
-//   version: 1,
+//   version: 2,
 //   settings: { sfx: true, onara: true, voice: true },
 //   chars: {
 //     midori: {
 //       wearing: { place: 'mushi', no: 2 } | null,
-//       places: { mushi: { correct: 4, visits: 2, seen: ['mushi-03', ...] } }
+//       places: { mushi: { correct: 4, visits: 2, seen: ['mushi-03', ...],
+//                          zukanSeen: { '1': ['mushi-monshirochou', ...], '2': [...] } } }
 //     }
 //   }
 // }
+// version 1（zukanSeen なし）の保存データも、そのまま読める（足りない項目は空で補う）。
+// correct は、テキストのクイズとずかんクイズで共通の、その場所の累計正解数。
+// seen はテキストのクイズ、zukanSeen はずかんクイズ（むずかしさごと）の「直近に出した問題」の記録。
 
-export const STORAGE_KEY = 'quiz-dressup.progress.v1';
-export const PROGRESS_VERSION = 1;
+export const STORAGE_KEY = 'quiz-dressup.progress.v1'; // 形は互換なので、キーは変えない
+export const PROGRESS_VERSION = 2;
 export const DEFAULT_SETTINGS = Object.freeze({ sfx: true, onara: true, voice: true });
 
 export function defaultProgress() {
   return { version: PROGRESS_VERSION, settings: { ...DEFAULT_SETTINGS }, chars: {} };
 }
 
-const emptyPlace = () => ({ correct: 0, visits: 0, seen: [] });
+const emptyPlace = () => ({ correct: 0, visits: 0, seen: [], zukanSeen: {} });
+const ZUKAN_LEVEL_KEYS = ['1', '2', '3'];
+
+/** zukanSeen を、{ '1': string[], '2': string[], '3': string[] }（ある分だけ）に直す */
+function normalizeZukanSeen(raw) {
+  const out = {};
+  if (!isObj(raw)) return out;
+  for (const k of ZUKAN_LEVEL_KEYS) {
+    if (Array.isArray(raw[k])) out[k] = raw[k].filter((s) => typeof s === 'string');
+  }
+  return out;
+}
 const emptyChar = () => ({ wearing: null, places: {} });
 const clone = (x) => JSON.parse(JSON.stringify(x));
 const isObj = (x) => x !== null && typeof x === 'object' && !Array.isArray(x);
@@ -50,6 +65,7 @@ export function normalizeProgress(raw) {
             correct: nat(ps.correct),
             visits: nat(ps.visits),
             seen: Array.isArray(ps.seen) ? ps.seen.filter((s) => typeof s === 'string') : [],
+            zukanSeen: normalizeZukanSeen(ps.zukanSeen),
           };
         }
       }
@@ -67,6 +83,12 @@ export function getChar(progress, charId) {
 
 export function getPlace(progress, charId, placeId) {
   return getChar(progress, charId).places[placeId] ?? emptyPlace();
+}
+
+/** ずかんクイズで、そのむずかしさの「直近に出した種類のID」（なければ []） */
+export function getZukanSeen(progress, charId, placeId, level) {
+  const seen = getPlace(progress, charId, placeId).zukanSeen?.[String(level)];
+  return Array.isArray(seen) ? seen.slice() : [];
 }
 
 /** その場所での累計正解数 */
@@ -109,6 +131,13 @@ export function recordVisit(progress, charId, placeId) {
 
 export function setSeen(progress, charId, placeId, seen) {
   return updatePlace(progress, charId, placeId, (ps) => { ps.seen = seen.slice(); });
+}
+
+/** ずかんクイズの記録を、そのむずかしさだけ書き換える（ほかのむずかしさ・元のデータは変えない） */
+export function setZukanSeen(progress, charId, placeId, level, seen) {
+  return updatePlace(progress, charId, placeId, (ps) => {
+    ps.zukanSeen = { ...(isObj(ps.zukanSeen) ? ps.zukanSeen : {}), [String(level)]: seen.slice() };
+  });
 }
 
 export function setWearing(progress, charId, wearing) {

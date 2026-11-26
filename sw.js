@@ -1,9 +1,10 @@
 // オフラインで遊べるようにする Service Worker。
 // - アプリ本体とデータ: ネットワーク優先（つながっていれば新しいものを使い、保存し直す）。つながらなければ保存したもの
 // - 画像（assets/）: 保存したもの優先。assets/manifest.json の version を URL に付けているので、取り込み直すと新しく保存される
+// - ずかんの写真（assets/zukan/*.jpg）: 同じく保存したもの優先。data/zukan.json の version を URL に付けている（見本 sample:true は保存しない）
 // ファイルを足したら SHELL にも足す（tools/run_tests.py が、書き忘れを調べる）。
 
-const SHELL_CACHE = 'qd-shell-v1';
+const SHELL_CACHE = 'qd-shell-v2';
 const ASSET_CACHE = 'qd-assets';
 
 const SHELL = [
@@ -22,6 +23,7 @@ const SHELL = [
   './src/logic/progress.js',
   './src/logic/game.js',
   './src/logic/witch.js',
+  './src/logic/zukan.js',
   './src/audio/voice.js',
   './src/audio/sfx.js',
   './src/ui/dom.js',
@@ -29,9 +31,14 @@ const SHELL = [
   './src/ui/effects.js',
   './src/ui/witch.js',
   './src/ui/common.js',
+  './src/ui/flow.js',
   './src/ui/screens/title.js',
   './src/ui/screens/map.js',
   './src/ui/screens/entrance.js',
+  './src/ui/screens/choose.js',
+  './src/ui/screens/level.js',
+  './src/ui/screens/zukanQuiz.js',
+  './src/ui/screens/credits.js',
   './src/ui/screens/quiz.js',
   './src/ui/screens/reward.js',
   './src/ui/screens/dressup.js',
@@ -42,34 +49,80 @@ const SHELL = [
   './data/places.json',
   './data/looks.json',
   './data/witch-lines.json',
-  './assets/manifest.json',
 ];
-// なくてもよいファイル（あれば保存する）
-const OPTIONAL = ['./data/voice-map.json'];
+// なくてもよいファイル（あれば保存する。なくても、更新は失敗にならない）
+const OPTIONAL = ['./data/voice-map.json', './data/zukan.json', './assets/manifest.json'];
 
+/** URL を保存する。保存できなかった URL の一覧を返す */
 async function cacheAll(cache, urls, optional = false) {
+  const failed = [];
   await Promise.all(urls.map(async (u) => {
     try {
       const res = await fetch(u, { cache: 'no-cache' });
-      if (res.ok) await cache.put(u, res);
+      if (!res.ok) throw new Error(String(res.status));
+      await cache.put(u, res);
     } catch (e) {
+      failed.push(u);
       if (!optional) console.warn('保存できませんでした', u, e);
     }
   }));
+  return failed;
 }
 
-/** assets/manifest.json にある画像を、version 付きの URL で保存する。古い version は消す */
-async function cacheImages() {
-  let manifest;
+/** JSON を読む。なければ {missing:true}（404）、通信などの失敗は {failed:true}、読めたら {json} */
+async function readJson(url) {
+  let res;
   try {
-    manifest = await (await fetch('./assets/manifest.json', { cache: 'no-cache' })).json();
+    res = await fetch(url, { cache: 'no-cache' });
   } catch {
-    return; // 画像がまだない
+    return { failed: true };
   }
+  if (res.status === 404) return { missing: true };
+  if (!res.ok) return { failed: true };
+  try {
+    return { json: await res.json() };
+  } catch {
+    return { failed: true };
+  }
+}
+
+/**
+ * 保存しておく画像の URL の一覧。
+ * assets/manifest.json の画像（.png）と、data/zukan.json のずかんの写真（.jpg。見本 sample:true は除く）。
+ * どちらも、version 付きの URL（写真は version が 0 のときだけ、付けない。画面側の photoUrl と同じ決まり）。
+ */
+async function wantedImageUrls() {
+  const want = new Set();
+  let complete = true; // 一覧を、2つとも読めたか（読めないものがあると、消してよい画像がわからない）
+  const abs = (path) => new URL(path, self.location).href;
+  const manifest = await readJson('./assets/manifest.json'); // 404 は「画像がまだない」
+  if (manifest.failed) complete = false;
+  else if (manifest.json) for (const n of manifest.json.images) want.add(abs(`./assets/${n}.png?v=${manifest.json.version}`));
+  const zukan = await readJson('./data/zukan.json'); // 404 は「ずかんがまだない」
+  if (zukan.failed) {
+    complete = false;
+  } else if (zukan.json) {
+    const v = Number.isInteger(zukan.json.version) ? zukan.json.version : 0;
+    for (const it of zukan.json.items ?? []) {
+      if (!it.sample && it.image) want.add(abs(`./assets/${it.image}.jpg${v ? `?v=${v}` : ''}`));
+    }
+  }
+  return { want, complete };
+}
+
+/**
+ * 画像を、version 付きの URL で保存する。古い version・使わなくなった画像は消す。
+ * ただし、一覧を2つとも読めたときだけ消す（通信が不安定で、片方しか読めなかったときに、
+ * もう片方の画像まで消してしまわないように）。
+ */
+async function cacheImages() {
+  const { want, complete } = await wantedImageUrls();
+  if (!want.size) return; // 画像がまだない
   const cache = await caches.open(ASSET_CACHE);
-  const want = new Set(manifest.images.map((n) => new URL(`./assets/${n}.png?v=${manifest.version}`, self.location).href));
-  for (const req of await cache.keys()) {
-    if (!want.has(req.url)) await cache.delete(req);
+  if (complete) {
+    for (const req of await cache.keys()) {
+      if (!want.has(req.url)) await cache.delete(req);
+    }
   }
   const have = new Set((await cache.keys()).map((r) => r.url));
   const todo = [...want].filter((u) => !have.has(u));
@@ -82,7 +135,10 @@ async function cacheImages() {
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const shell = await caches.open(SHELL_CACHE);
-    await cacheAll(shell, SHELL);
+    const failed = await cacheAll(shell, SHELL);
+    // アプリのファイルが1つでも保存できなかったら、この更新は失敗にする（古い版が、そのまま使われ続ける）。
+    // 穴のある新しい版に切り替わると、オフラインで空になる
+    if (failed.length) throw new Error(`アプリのファイルを保存できませんでした: ${failed.join(', ')}`);
     await cacheAll(shell, OPTIONAL, true);
     await cacheImages();
     await self.skipWaiting();
@@ -109,7 +165,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return; // 外への通信はしない（そもそも使っていない）
 
-  if (url.pathname.includes('/assets/') && url.pathname.endsWith('.png')) {
+  if (url.pathname.includes('/assets/') && (url.pathname.endsWith('.png') || url.pathname.endsWith('.jpg'))) {
     event.respondWith(cacheFirst(req));
   } else {
     event.respondWith(networkFirst(req));

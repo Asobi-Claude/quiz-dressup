@@ -37,7 +37,7 @@ export function mapScreen(app) {
     if (!app.game.places[i].enabled) pin.addEventListener('click', () => voice.speak('ここは まだ じゅんびちゅう だよ'));
   });
 
-  const el = h('div', { class: 'map-wrap' },
+  const el = h('div', { class: `map-wrap ${app.game.places.length > 5 ? 'is-dense' : ''}` },
     h('button', {
       class: `me ${look?.special ? 'is-special' : ''}`,
       type: 'button',

@@ -2,6 +2,34 @@
 // その場所での累計正解数が、ルックの need 以上なら解放。一度解放したらずっと使える
 // （累計正解数は減らないので、判定は累計だけで決まる）。
 
+/** ドレス画面で、1ページに並べる数（3×2） */
+export const LOOKS_PAGE_SIZE = 6;
+
+/** ルック（no の順）を、ページに分ける */
+export function lookPages(looks, size = LOOKS_PAGE_SIZE) {
+  const pages = [];
+  for (let i = 0; i < looks.length; i += size) pages.push(looks.slice(i, i + size));
+  return pages;
+}
+
+/** no のルックがあるページ（0始まり）。見つからなければ 0 */
+export function pageOfLook(looks, no, size = LOOKS_PAGE_SIZE) {
+  const i = looks.findIndex((l) => l.no === no);
+  return i < 0 ? 0 : Math.floor(i / size);
+}
+
+/**
+ * ドレス画面を開くページ（0始まり）。
+ * 新しく解放されたドレスがあれば、いちばん新しいドレスのページ（見つけやすいように。着ているドレスより優先）。
+ * なければ、この場所で着ているドレスのページ。どちらもなければ 0。
+ */
+export function initialLookPage(looks, placeId, worn, newly) {
+  const newest = newly?.length ? newly[newly.length - 1] : null;
+  if (newest) return pageOfLook(looks, newest.no);
+  if (worn && worn.place === placeId) return pageOfLook(looks, worn.no);
+  return 0;
+}
+
 /** その場所・キャラのルック（no の順） */
 export function looksFor(looks, placeId, charId) {
   return looks.filter((l) => l.place === placeId && l.char === charId).sort((a, b) => a.no - b.no);

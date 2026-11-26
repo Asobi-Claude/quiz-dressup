@@ -211,9 +211,17 @@ img { -webkit-user-drag: none; }
   background: var(--paper); border: 5px solid var(--ink); border-radius: 18px;
   padding: 4px 18px; font-size: 28px; font-weight: 900; white-space: nowrap;
 }
-.pin-dots { display: flex; gap: 6px; margin-top: 8px; padding: 5px 10px; background: rgba(255,250,241,.85); border-radius: 999px; }
+.pin-dots {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; max-width: 190px; /* ドレスが13着になっても、ピンからはみ出さない */
+  margin-top: 8px; padding: 5px 10px; background: rgba(255,250,241,.85); border-radius: 999px;
+}
 .pin-dots i { width: 16px; height: 16px; border-radius: 50%; border: 3px solid var(--ink); background: #fff; }
 .pin-dots i.is-on { background: var(--sun); }
+.map-wrap.is-dense .pin-medal { width: 104px; height: 104px; font-size: 56px; border-width: 5px; box-shadow: 0 6px 0 var(--ink); }
+.map-wrap.is-dense .pin-name { margin-top: -12px; border-width: 4px; padding: 2px 14px; font-size: 22px; }
+.map-wrap.is-dense .pin-dots { gap: 4px; max-width: 150px; margin-top: 6px; padding: 4px 8px; }
+.map-wrap.is-dense .pin-dots i { width: 12px; height: 12px; border-width: 2px; }
+.map-wrap.is-dense .place-pin.is-new .pin-medal::after { transform: translate(40px, -44px); font-size: 38px; }
 .place-pin.is-new .pin-medal { animation: glow 1.6s ease-in-out infinite; }
 .place-pin.is-new .pin-medal::after {
   content: "✨"; position: absolute; transform: translate(52px, -56px); font-size: 46px;
@@ -232,6 +240,78 @@ img { -webkit-user-drag: none; }
 .witch-entrance { left: 70px; bottom: 0; width: 380px; height: 590px; }
 .witch-entrance .witch-bubble { left: 400px; top: 70px; width: 680px; font-size: 40px; }
 .witch-entrance .witch-bubble::after { left: -22px; top: 120px; transform: rotate(135deg); }
+
+/* ---------- えらぶ（もんだい／ずかんクイズ）・むずかしさ ---------- */
+.choose-cards { position: absolute; left: 470px; top: 370px; display: flex; gap: 40px; z-index: 4; }
+.mode-card, .level-card {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font: inherit; color: var(--ink); background: var(--paper);
+  border: 6px solid var(--ink); border-radius: 44px; box-shadow: 0 10px 0 var(--ink);
+  cursor: pointer; touch-action: manipulation; padding: 0 14px;
+  transition: transform .08s, box-shadow .08s;
+}
+.mode-card:active, .level-card:active { transform: translateY(6px); box-shadow: 0 4px 0 var(--ink); }
+.mode-card:focus-visible, .level-card:focus-visible { outline: 6px solid #2f7de1; outline-offset: 6px; }
+.mode-card { width: 320px; height: 300px; gap: 6px; }
+.mode-card.is-zukan { background: #fff3c2; }
+.mode-card-icon { font-size: 104px; line-height: 1; }
+.mode-card-label { font-size: 44px; font-weight: 900; letter-spacing: .04em; }
+.mode-card-sub { font-size: 24px; font-weight: 800; color: #7a6891; }
+.level-cards { position: absolute; left: 0; right: 0; top: 150px; display: flex; justify-content: center; gap: 36px; z-index: 4; }
+.level-card { width: 330px; height: 480px; gap: 14px; }
+.level-stars .star { font-size: 66px; }
+.level-name { font-size: 50px; font-weight: 900; letter-spacing: .04em; }
+.level-pic { width: 270px; height: 190px; border-radius: 26px; background: #f3ecdf; overflow: hidden; display: flex; }
+.level-pic .pic { width: 100%; height: 100%; display: flex; }
+.level-pic img { width: 100%; height: 100%; object-fit: cover; }
+.level-sub { font-size: 24px; font-weight: 800; color: #7a6891; }
+.ph-zukan {
+  width: 100%; height: 100%; display: grid; place-items: center;
+  background: repeating-linear-gradient(45deg, #efe6d4, #efe6d4 14px, #f6efe0 14px, #f6efe0 28px);
+}
+.ph-zukan .ph-mark { font-size: 90px; font-weight: 900; color: var(--ink-soft); }
+.pic-zukan { align-items: center; }
+
+/* ---------- ずかんクイズ ---------- */
+.zq-ask {
+  position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+  display: flex; align-items: center; gap: 18px; white-space: nowrap;
+  background: var(--paper); border: 6px solid var(--ink); border-radius: 999px;
+  padding: 8px 12px 8px 44px; font-size: 46px; font-weight: 900; box-shadow: 0 8px 0 var(--ink);
+}
+.zq-ask .speaker { width: 96px; height: 96px; font-size: 44px; background: var(--sky); }
+.zq-photo {
+  position: absolute; top: 166px; left: 50%; transform: translateX(-50%); width: 640px; height: 288px;
+  display: flex; padding: 8px; background: var(--paper);
+  border: 6px solid var(--ink); border-radius: 30px; box-shadow: 0 8px 0 var(--ink);
+}
+.zq-photo .pic, .zq-panel-pic .pic, .zq-pic-choice .pic { width: 100%; height: 100%; display: flex; }
+.zq-photo img, .zq-panel-pic img, .zq-pic-choice img { width: 100%; height: 100%; object-fit: contain; border-radius: 20px; }
+.zq-choices {
+  position: absolute; left: 70px; right: 70px; bottom: 26px;
+  display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 104px 104px; gap: 16px;
+}
+.zq-choice { gap: 2px; padding: 6px 18px; }
+.zq-choice .choice-text { font-size: 40px; line-height: 1.1; }
+.zq-reading { font-size: 24px; font-weight: 800; color: #7a6891; line-height: 1; }
+.zq-two { position: absolute; left: 90px; right: 90px; top: 166px; bottom: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.zq-pic-choice { padding: 14px; flex-direction: row; }
+.zq-wrap.has-panel .zq-choices, .zq-wrap.has-panel .zq-two, .zq-wrap.has-panel .zq-photo { visibility: hidden; }
+.zq-panel {
+  pointer-events: auto; position: absolute; inset: 166px 70px 26px 70px; z-index: 8;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+  background: var(--paper); border: 6px solid var(--ink); border-radius: 36px;
+  padding: 22px 26px; box-shadow: 0 10px 0 var(--ink); animation: rise .35s ease-out;
+}
+.zq-panel-pic { display: flex; background: #f3ecdf; border-radius: 26px; overflow: hidden; padding: 6px; }
+.zq-panel-body { display: flex; flex-direction: column; justify-content: space-between; min-width: 0; }
+.zq-panel-answer {
+  position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  background: #e5f7ec; border-radius: 26px; padding: 14px; margin-bottom: 18px;
+}
+.zq-panel-name { position: relative; z-index: 1; font-size: 58px; font-weight: 900; text-align: center; line-height: 1.2; }
+.zq-panel-reading { position: relative; z-index: 1; font-size: 30px; font-weight: 800; color: #7a6891; }
+.zq-panel .go { position: static; }
 
 /* ---------- クイズ ---------- */
 .quiz-wrap .bg-veil { position: absolute; inset: 0; }
@@ -398,6 +478,20 @@ img { -webkit-user-drag: none; }
 .dress-wrap .go.ohirome { right: 24px; bottom: 40px; width: 456px; }
 .dress-wrap .home { z-index: 6; }
 
+/* ドレスが7着以上のとき: 1ページ6着。◀ ▶ でページをめくる（ボタンは96px） */
+.dress-wrap.has-pager .thumb { height: 188px; }
+.pager {
+  position: absolute; right: 24px; top: 440px; width: 456px; height: 96px;
+  display: flex; align-items: center; justify-content: space-between; z-index: 6;
+}
+.pager .btn.icon { width: 96px; height: 96px; font-size: 42px; }
+.pager .btn:disabled { opacity: .35; pointer-events: none; }
+.pager-num {
+  min-width: 170px; text-align: center; font-size: 40px; font-weight: 900; line-height: 1;
+  background: var(--paper); border: 5px solid var(--ink); border-radius: 999px; padding: 14px 20px;
+  box-shadow: 0 7px 0 var(--ink);
+}
+
 /* 特別ルック: まわりで星がまたたく */
 .is-special { position: relative; }
 .figure.is-special::before, .figure.is-special::after, .photo.is-special::before, .photo.is-special::after,
@@ -448,7 +542,7 @@ img { -webkit-user-drag: none; }
 .settings-title { margin: 0 0 20px; font-size: 48px; }
 .toggles { display: flex; gap: 26px; justify-content: center; }
 .toggle {
-  width: 250px; height: 200px; font: inherit; color: var(--ink); cursor: pointer;
+  width: 250px; height: 172px; font: inherit; color: var(--ink); cursor: pointer;
   background: #fff; border: 5px solid var(--ink); border-radius: 30px; box-shadow: 0 7px 0 var(--ink);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
 }
@@ -458,13 +552,24 @@ img { -webkit-user-drag: none; }
 .toggle-icon { font-size: 64px; line-height: 1.1; }
 .toggle-label { font-size: 32px; font-weight: 900; }
 .toggle-state { font-size: 26px; font-weight: 800; padding: 0 16px; border-radius: 999px; background: var(--paper); border: 3px solid var(--ink); }
-.settings-adult { margin: 20px 0 14px; padding-top: 16px; border-top: 4px dashed var(--ink-soft); }
+.settings-adult { margin: 14px 0 10px; padding-top: 12px; border-top: 4px dashed var(--ink-soft); }
 .settings-note { margin: 0 0 10px; font-size: 24px; font-weight: 800; }
 .settings-note.small { font-size: 20px; opacity: .8; margin-top: 8px; }
 .btn.hold { position: relative; overflow: hidden; min-height: 80px; padding: 0 30px; font-size: 26px; font-weight: 900; border-radius: 24px; background: #fde2e6; }
 .hold-fill { position: absolute; inset: 0 auto 0 0; width: 0; background: #f497a8; }
 .btn.hold.is-holding .hold-fill { width: 100%; transition: width var(--hold) linear; }
 .btn.hold .btn-label { position: relative; }
+.btn.hold.neutral { background: #ebe6f5; }
+.btn.hold.neutral .hold-fill { background: #b9a8e6; }
+.settings-adult .btn.hold { display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; }
+
+/* ---------- 写真のクレジット ---------- */
+.credits-card { width: 1000px; max-height: 660px; display: flex; flex-direction: column; gap: 14px; }
+.credits-body { flex: 1; min-height: 0; overflow-y: auto; text-align: left; padding: 4px 10px; -webkit-overflow-scrolling: touch; }
+.credits-place { margin: 14px 0 6px; font-size: 30px; }
+.credit-line { margin: 0 0 8px; font-size: 22px; font-weight: 700; line-height: 1.5; }
+.credit-line b { font-weight: 900; }
+.credit-source { display: block; font-size: 17px; font-weight: 600; opacity: .75; word-break: break-all; }
 
 /* ---------- よこに してね ---------- */
 #rotate {

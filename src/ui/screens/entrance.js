@@ -3,19 +3,14 @@ import { h, sleep } from '../dom.js';
 import { bigButton, iconButton } from '../common.js';
 import { createWitch } from '../witch.js';
 import { entranceLines } from '../../logic/witch.js';
-import { startVisit } from '../../logic/game.js';
+import { startPlace } from '../flow.js';
 
 export function entranceScreen(app, { placeId }) {
   const place = app.place(placeId);
   const witch = createWitch(app, { cls: 'witch-entrance' });
   const lines = entranceLines(app.game.witch, app.mode, place);
 
-  const start = () => {
-    const v = startVisit(app.progress, app.game, app.charId, placeId);
-    app.save(v.progress);
-    app.visit = { placeId, round: v.round, totalBefore: v.totalBefore };
-    app.go('quiz');
-  };
+  const start = () => startPlace(app, place);
 
   const el = h('div', { class: 'entrance-wrap' },
     iconButton('🏠', 'マップに もどる', () => app.go('map'), 'home'),

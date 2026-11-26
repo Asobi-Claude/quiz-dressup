@@ -30,14 +30,22 @@ function append(el, children) {
   }
 }
 
+// 画面が切り替わった直後のタップは無視する。ボタンごとの連打よけ（下の wait）は、新しい画面の
+// 新しいボタンには効かないので、「つぎへ」を連打した2回目が、次の問題の答えになってしまうのを防ぐ。
+export const NAV_GUARD_MS = 450;
+let lastNavigation = -Infinity;
+export function markNavigation() { lastNavigation = performance.now(); }
+
 /**
  * タップ。連打しても1回ぶんだけ反応する（小さい子の連打・二度押し対策）。
+ * 画面が切り替わった直後（NAV_GUARD_MS）のタップも、反応しない。
  * disabled や .is-off の要素は反応しない。
  */
 export function onTap(el, fn, wait = 350) {
   let last = -Infinity; // 0 だと、ページを開いた直後のタップが無視されてしまう
   el.addEventListener('click', (e) => {
     const now = performance.now();
+    if (now - lastNavigation < NAV_GUARD_MS) return;
     if (now - last < wait) return;
     if (el.disabled || el.classList.contains('is-off')) return;
     last = now;

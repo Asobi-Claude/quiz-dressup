@@ -1,11 +1,15 @@
 // 1回の「場所への訪問」をまとめるロジック（画面と関係なし）。
 // 画面はこの関数を呼び、返ってきた progress を保存するだけでよい。
-import { questionPool, drawQuestions, releaseUnshown, createRound, answerCurrent, unshownIds, MODE_NORMAL } from './quiz.js';
+import { questionPool, drawQuestions, releaseUnshown, createRound, answerCurrent, unshownIds, MODE_NORMAL, MODE_HIICHAN } from './quiz.js';
 import { looksFor, newlyUnlocked, nextLockedLook, remainingFor } from './unlock.js';
-import { recordVisit, setSeen, addCorrect, getPlace, totalCorrect } from './progress.js';
+import {
+  recordVisit, setSeen, addCorrect, getPlace, totalCorrect, getZukanSeen, setZukanSeen,
+} from './progress.js';
+import { drawZukanQuestions } from './zukan.js';
 import { defaultRng } from './rng.js';
 
 export const QUESTIONS_PER_VISIT = 3;
+export const ZUKAN_QUESTIONS_PER_VISIT = 5;
 
 export function modeOf(game, charId) {
   return game.characters.find((c) => c.id === charId)?.mode ?? MODE_NORMAL;
@@ -26,6 +30,34 @@ export function startVisit(progress, game, charId, placeId, rng = defaultRng) {
     round: createRound(drawn.questions, mode),
     totalBefore: totalCorrect(progress, charId, placeId),
   };
+}
+
+/**
+ * 場所に入って、ずかんクイズを始める（1回5問）。
+ * ひーちゃんモードは、むずかしさを「かんたん(1)」にする。返す level は、実際に使ったむずかしさ。
+ * 正解は、そのあとの answer() で、テキストのクイズと同じ累計（correct）に足される。
+ */
+export function startZukanVisit(progress, game, charId, placeId, level, rng = defaultRng) {
+  const place = game.places.find((p) => p.id === placeId);
+  if (!place) throw new Error(`場所 "${placeId}" がありません`);
+  const mode = modeOf(game, charId);
+  const usedLevel = mode === MODE_HIICHAN ? 1 : level;
+  const seen = getZukanSeen(progress, charId, placeId, usedLevel);
+  const drawn = drawZukanQuestions(place.zukan ?? [], placeId, usedLevel, mode, seen, ZUKAN_QUESTIONS_PER_VISIT, rng);
+  let p = recordVisit(progress, charId, placeId);
+  p = setZukanSeen(p, charId, placeId, usedLevel, drawn.seen);
+  return {
+    progress: p,
+    round: createRound(drawn.questions, mode),
+    totalBefore: totalCorrect(progress, charId, placeId),
+    level: usedLevel,
+  };
+}
+
+/** 途中でやめる（ずかんクイズ）: まだ見せていない種類は、次の回に出てよいようにする */
+export function quitZukanVisit(progress, round, charId, placeId, level) {
+  const seen = getZukanSeen(progress, charId, placeId, level);
+  return setZukanSeen(progress, charId, placeId, level, releaseUnshown(seen, unshownIds(round)));
 }
 
 /** いまの問題に答える。正解数に数えるときは、すぐ累計に足す */

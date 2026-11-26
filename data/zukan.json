@@ -1,0 +1,2030 @@
+{
+  "version": 4,
+  "items": [
+    {
+      "id": "dobutsu-01",
+      "place": "dobutsu",
+      "name": "ライオン",
+      "reading": "らいおん",
+      "difficulty": 1,
+      "image": "zukan/dobutsu-01",
+      "credit": {
+        "author": "iNaturalist の投稿者",
+        "license": "CC0 1.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/95286309",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-02",
+      "place": "dobutsu",
+      "name": "アフリカゾウ",
+      "reading": "あふりかぞう",
+      "difficulty": 1,
+      "image": "zukan/dobutsu-02",
+      "credit": {
+        "author": "Hobbyfotowiki",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_bush_elephant_(Loxodonta_africana),_Masai_Mara.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-03",
+      "place": "dobutsu",
+      "name": "キリン",
+      "reading": "きりん",
+      "difficulty": 1,
+      "image": "zukan/dobutsu-03",
+      "credit": {
+        "author": "John Walker",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giraffen.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-04",
+      "place": "dobutsu",
+      "name": "ジャイアントパンダ",
+      "reading": "じゃいあんとぱんだ",
+      "difficulty": 1,
+      "image": "zukan/dobutsu-04",
+      "credit": {
+        "author": "Aaron Logan",
+        "license": "CC BY 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lightmatter_panda.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-05",
+      "place": "dobutsu",
+      "name": "コアラ",
+      "reading": "こあら",
+      "difficulty": 1,
+      "image": "zukan/dobutsu-05",
+      "credit": {
+        "author": "Till Niermann",
+        "license": "CC BY 3.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koala_in_Zoo_Duisburg.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    },
+    {
+      "id": "dobutsu-06",
+      "place": "dobutsu",
+      "name": "レッサーパンダ",
+      "reading": "れっさーぱんだ",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-06",
+      "credit": {
+        "author": "Mathias Appel",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Panda_(24986761703).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-07",
+      "place": "dobutsu",
+      "name": "カバ",
+      "reading": "かば",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-07",
+      "credit": {
+        "author": "Marinelson Almeida - Traveling through Brazil from Niteroi, Brasil",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Preciso_fazer_um_regime_!_(15914668742).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "dobutsu-08",
+      "place": "dobutsu",
+      "name": "シマウマ",
+      "reading": "しまうま",
+      "difficulty": 1,
+      "image": "zukan/dobutsu-08",
+      "credit": {
+        "author": "Taken & submitted by Paul Maritz (Paulmaz) / Modified by Pharaoh Hound, Fir0002",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zebra_Botswana_edit02.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "dobutsu-09",
+      "place": "dobutsu",
+      "name": "チーター",
+      "reading": "ちーたー",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-09",
+      "credit": {
+        "author": "James Temple",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TheCheethcat.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "dobutsu-10",
+      "place": "dobutsu",
+      "name": "ゴリラ",
+      "reading": "ごりら",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-10",
+      "credit": {
+        "author": "Rennett Stowe from USA",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lowland_Gorilla_(8973697544).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "dobutsu-11",
+      "place": "dobutsu",
+      "name": "カンガルー",
+      "reading": "かんがるー",
+      "difficulty": 1,
+      "image": "zukan/dobutsu-11",
+      "credit": {
+        "author": "Drs",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kangur.rudy.drs.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-12",
+      "place": "dobutsu",
+      "name": "アルパカ",
+      "reading": "あるぱか",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-12",
+      "credit": {
+        "author": "Tony Hisgett from Birmingham, UK",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpaca_(31562329701).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "dobutsu-13",
+      "place": "dobutsu",
+      "name": "カピバラ",
+      "reading": "かぴばら",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-13",
+      "credit": {
+        "author": "Lucas Mantelo Cruz",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/214195082",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "dobutsu-14",
+      "place": "dobutsu",
+      "name": "ホッキョクグマ",
+      "reading": "ほっきょくぐま",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-14",
+      "credit": {
+        "author": "iNaturalist の投稿者",
+        "license": "CC0 1.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/179552115",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-15",
+      "place": "dobutsu",
+      "name": "トナカイ",
+      "reading": "となかい",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-15",
+      "credit": {
+        "author": "Dean Biggins (U.S. Fish and Wildlife Service)",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caribou.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-16",
+      "place": "dobutsu",
+      "name": "ハリネズミ",
+      "reading": "はりねずみ",
+      "difficulty": 3,
+      "image": "zukan/dobutsu-16",
+      "credit": {
+        "author": "byapryl",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hedgehog_on_grass_in_the_morning.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-17",
+      "place": "dobutsu",
+      "name": "モモンガ",
+      "reading": "ももんが",
+      "difficulty": 3,
+      "image": "zukan/dobutsu-17",
+      "credit": {
+        "author": "Monsieur Fou",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polatouche-estonien.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-18",
+      "place": "dobutsu",
+      "name": "ナマケモノ",
+      "reading": "なまけもの",
+      "difficulty": 3,
+      "image": "zukan/dobutsu-18",
+      "credit": {
+        "author": "Stefan Laube (Tauchgurke)",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bradypus.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "dobutsu-19",
+      "place": "dobutsu",
+      "name": "アライグマ",
+      "reading": "あらいぐま",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-19",
+      "credit": {
+        "author": "Michael D Fox",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "http://www.inaturalist.org/observations/2402257",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "dobutsu-20",
+      "place": "dobutsu",
+      "name": "フラミンゴ",
+      "reading": "ふらみんご",
+      "difficulty": 2,
+      "image": "zukan/dobutsu-20",
+      "credit": {
+        "author": "Joselodos",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flamingo,_Las_Salinas_Natural_Park,_Ibiza.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "umi-01",
+      "place": "umi",
+      "name": "シロナガスクジラ",
+      "reading": "しろながすくじら",
+      "difficulty": 2,
+      "image": "zukan/umi-01",
+      "credit": {
+        "author": "NOAA Photo Library",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "umi-02",
+      "place": "umi",
+      "name": "シャチ",
+      "reading": "しゃち",
+      "difficulty": 1,
+      "image": "zukan/umi-02",
+      "credit": {
+        "author": "Robert Pittman",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "umi-03",
+      "place": "umi",
+      "name": "バンドウイルカ",
+      "reading": "ばんどういるか",
+      "difficulty": 1,
+      "image": "zukan/umi-03",
+      "credit": {
+        "author": "NASA",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tursiops_truncatus_01-cropped.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "umi-04",
+      "place": "umi",
+      "name": "コウテイペンギン",
+      "reading": "こうていぺんぎん",
+      "difficulty": 1,
+      "image": "zukan/umi-04",
+      "credit": {
+        "author": "Ian Duffy from UK",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "umi-05",
+      "place": "umi",
+      "name": "ラッコ",
+      "reading": "らっこ",
+      "difficulty": 1,
+      "image": "zukan/umi-05",
+      "credit": {
+        "author": "Mike Baird from Morro Bay, USA",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sea_otter_cropped.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "umi-06",
+      "place": "umi",
+      "name": "セイウチ",
+      "reading": "せいうち",
+      "difficulty": 2,
+      "image": "zukan/umi-06",
+      "credit": {
+        "author": "Joel Garlich-Miller, U.S. Fish and Wildlife Service",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pacific_Walrus_-_Bull_(8247646168).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "umi-07",
+      "place": "umi",
+      "name": "ジンベエザメ",
+      "reading": "じんべえざめ",
+      "difficulty": 2,
+      "image": "zukan/umi-07",
+      "credit": {
+        "author": "Daniel Benák",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/134590116",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "umi-08",
+      "place": "umi",
+      "name": "ホホジロザメ",
+      "reading": "ほほじろざめ",
+      "difficulty": 2,
+      "image": "zukan/umi-08",
+      "credit": {
+        "author": "Elias Levy",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_White_Shark_(14730796397).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "umi-09",
+      "place": "umi",
+      "name": "シュモクザメ",
+      "reading": "しゅもくざめ",
+      "difficulty": 3,
+      "image": "zukan/umi-09",
+      "credit": {
+        "author": "suneko",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hammerhead_shark.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "umi-10",
+      "place": "umi",
+      "name": "マンタ",
+      "reading": "まんた",
+      "difficulty": 2,
+      "image": "zukan/umi-10",
+      "credit": {
+        "author": "Victor E. Chocho",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/328321068",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "umi-11",
+      "place": "umi",
+      "name": "カクレクマノミ",
+      "reading": "かくれくまのみ",
+      "difficulty": 1,
+      "image": "zukan/umi-11",
+      "credit": {
+        "author": "Pauline Walsh Jacobson",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amphiprion_ocellaris_314100281.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "umi-12",
+      "place": "umi",
+      "name": "ナンヨウハギ",
+      "reading": "なんようはぎ",
+      "difficulty": 2,
+      "image": "zukan/umi-12",
+      "credit": {
+        "author": "Holger Krisp",
+        "license": "CC BY 3.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paracanthurus-hepatus-paletten-doktorfisch.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    },
+    {
+      "id": "umi-13",
+      "place": "umi",
+      "name": "チンアナゴ",
+      "reading": "ちんあなご",
+      "difficulty": 2,
+      "image": "zukan/umi-13",
+      "credit": {
+        "author": "Wisnia6522",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:W%C4%99gorz_ogrodowy.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "umi-14",
+      "place": "umi",
+      "name": "タツノオトシゴ",
+      "reading": "たつのおとしご",
+      "difficulty": 2,
+      "image": "zukan/umi-14",
+      "credit": {
+        "author": "Pauline Walsh Jacobson",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/142841579",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "umi-15",
+      "place": "umi",
+      "name": "ミズクラゲ",
+      "reading": "みずくらげ",
+      "difficulty": 1,
+      "image": "zukan/umi-15",
+      "credit": {
+        "author": "iNaturalist の投稿者",
+        "license": "CC0 1.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/175805603",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "umi-16",
+      "place": "umi",
+      "name": "マダコ",
+      "reading": "まだこ",
+      "difficulty": 2,
+      "image": "zukan/umi-16",
+      "credit": {
+        "author": "呂一起(Lyu yi-chi)",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/292104413",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "umi-17",
+      "place": "umi",
+      "name": "アオリイカ",
+      "reading": "あおりいか",
+      "difficulty": 3,
+      "image": "zukan/umi-17",
+      "credit": {
+        "author": "Auradyme",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/160003060",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "umi-18",
+      "place": "umi",
+      "name": "アオウミガメ",
+      "reading": "あおうみがめ",
+      "difficulty": 1,
+      "image": "zukan/umi-18",
+      "credit": {
+        "author": "Don Loarie",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/37190986",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "umi-19",
+      "place": "umi",
+      "name": "タラバガニ",
+      "reading": "たらばがに",
+      "difficulty": 2,
+      "image": "zukan/umi-19",
+      "credit": {
+        "author": "Yury A. Zuyev",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paralithodes_camtschaticus_invasive_Dalnezelenetsky_Bay_3.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "umi-20",
+      "place": "umi",
+      "name": "ダイオウグソクムシ",
+      "reading": "だいおうぐそくむし",
+      "difficulty": 3,
+      "image": "zukan/umi-20",
+      "credit": {
+        "author": "Corbari L.",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bathynomus_giganteus_(MNHN-IU-2013-2920)_001.jpeg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-01",
+      "place": "mushi",
+      "name": "モンシロチョウ",
+      "reading": "もんしろちょう",
+      "difficulty": 1,
+      "image": "zukan/mushi-01",
+      "credit": {
+        "author": "Hsu Hong Lin from 南投縣集集鎮, 中華民國",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:113%E7%B4%8B%E7%99%BD%E8%9D%B62(%E6%9D%8E%E6%B7%91%E6%83%A0%E6%94%9D)_(19046704071).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "mushi-02",
+      "place": "mushi",
+      "name": "アゲハチョウ",
+      "reading": "あげはちょう",
+      "difficulty": 1,
+      "image": "zukan/mushi-02",
+      "credit": {
+        "author": "Robek",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Papilio_demoleus_butterfly.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "mushi-03",
+      "place": "mushi",
+      "name": "カブトムシ",
+      "reading": "かぶとむし",
+      "difficulty": 1,
+      "image": "zukan/mushi-03",
+      "credit": {
+        "author": "Kim, Hyun-tae",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "http://www.inaturalist.org/observations/2510025",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-04",
+      "place": "mushi",
+      "name": "ヘラクレスオオカブト",
+      "reading": "へらくれすおおかぶと",
+      "difficulty": 2,
+      "image": "zukan/mushi-04",
+      "credit": {
+        "author": "TOUROULT Julien",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/12668360",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-05",
+      "place": "mushi",
+      "name": "ノコギリクワガタ",
+      "reading": "のこぎりくわがた",
+      "difficulty": 2,
+      "image": "zukan/mushi-05",
+      "credit": {
+        "author": "iNaturalist の投稿者",
+        "license": "CC0 1.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/183451762",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "mushi-06",
+      "place": "mushi",
+      "name": "オオクワガタ",
+      "reading": "おおくわがた",
+      "difficulty": 2,
+      "image": "zukan/mushi-06",
+      "credit": {
+        "author": "Stanislav Snäll",
+        "license": "CC BY 3.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorcus_parallelipipedus_m.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    },
+    {
+      "id": "mushi-07",
+      "place": "mushi",
+      "name": "ナナホシテントウ",
+      "reading": "ななほしてんとう",
+      "difficulty": 1,
+      "image": "zukan/mushi-07",
+      "credit": {
+        "author": "Jon Sullivan (PD-PDphoto.org)",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ladybird.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "mushi-08",
+      "place": "mushi",
+      "name": "オオカマキリ",
+      "reading": "おおかまきり",
+      "difficulty": 2,
+      "image": "zukan/mushi-08",
+      "credit": {
+        "author": "TekuraDF",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tenodera_aridifolia(Female,Japan,2017.10.08).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "mushi-09",
+      "place": "mushi",
+      "name": "トノサマバッタ",
+      "reading": "とのさまばった",
+      "difficulty": 2,
+      "image": "zukan/mushi-09",
+      "credit": {
+        "author": "Олег Кудров",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/93018007",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-10",
+      "place": "mushi",
+      "name": "アブラゼミ",
+      "reading": "あぶらぜみ",
+      "difficulty": 2,
+      "image": "zukan/mushi-10",
+      "credit": {
+        "author": "Timur Kalininsky",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/342841041",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-11",
+      "place": "mushi",
+      "name": "ミンミンゼミ",
+      "reading": "みんみんぜみ",
+      "difficulty": 2,
+      "image": "zukan/mushi-11",
+      "credit": {
+        "author": "RedDragon",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oncotympana_maculaicollis.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "mushi-12",
+      "place": "mushi",
+      "name": "オニヤンマ",
+      "reading": "おにやんま",
+      "difficulty": 2,
+      "image": "zukan/mushi-12",
+      "credit": {
+        "author": "Jan Ebr & Ivana Ebrová",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/175131694",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-13",
+      "place": "mushi",
+      "name": "ギンヤンマ",
+      "reading": "ぎんやんま",
+      "difficulty": 3,
+      "image": "zukan/mushi-13",
+      "credit": {
+        "author": "リバー",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/217070015",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-14",
+      "place": "mushi",
+      "name": "ミツバチ",
+      "reading": "みつばち",
+      "difficulty": 1,
+      "image": "zukan/mushi-14",
+      "credit": {
+        "author": "John Severns (Severnjc)",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_honey_bee_extracts_nectar.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "mushi-15",
+      "place": "mushi",
+      "name": "オオスズメバチ",
+      "reading": "おおすずめばち",
+      "difficulty": 3,
+      "image": "zukan/mushi-15",
+      "credit": {
+        "author": "Ken Ishigaki",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asian_giant_hornet%EF%BC%88Vespa_mandarinia%EF%BC%89%E3%82%AA%E3%82%AA%E3%82%B9%E3%82%BA%E3%83%A1%E3%83%90%E3%83%81.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "mushi-16",
+      "place": "mushi",
+      "name": "クロオオアリ",
+      "reading": "くろおおあり",
+      "difficulty": 2,
+      "image": "zukan/mushi-16",
+      "credit": {
+        "author": "Jonghyun Park",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/183461036",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-17",
+      "place": "mushi",
+      "name": "ダンゴムシ",
+      "reading": "だんごむし",
+      "difficulty": 1,
+      "image": "zukan/mushi-17",
+      "credit": {
+        "author": "Franco Folini",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_001.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "mushi-18",
+      "place": "mushi",
+      "name": "カタツムリ",
+      "reading": "かたつむり",
+      "difficulty": 1,
+      "image": "zukan/mushi-18",
+      "credit": {
+        "author": "Se Lena",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/83803049",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-19",
+      "place": "mushi",
+      "name": "ゲンジボタル",
+      "reading": "げんじぼたる",
+      "difficulty": 2,
+      "image": "zukan/mushi-19",
+      "credit": {
+        "author": "W Rao",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/233216199",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "mushi-20",
+      "place": "mushi",
+      "name": "タガメ",
+      "reading": "たがめ",
+      "difficulty": 3,
+      "image": "zukan/mushi-20",
+      "credit": {
+        "author": "Ffish.asia",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tagame-female-male-DSC-8000.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-01",
+      "place": "shokubutsu",
+      "name": "ヒマワリ",
+      "reading": "ひまわり",
+      "difficulty": 1,
+      "image": "zukan/shokubutsu-01",
+      "credit": {
+        "author": "George Chernilevsky",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunflower_head_2026_G1.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-02",
+      "place": "shokubutsu",
+      "name": "チューリップ",
+      "reading": "ちゅーりっぷ",
+      "difficulty": 1,
+      "image": "zukan/shokubutsu-02",
+      "credit": {
+        "author": "Dina L",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-03",
+      "place": "shokubutsu",
+      "name": "タンポポ",
+      "reading": "たんぽぽ",
+      "difficulty": 1,
+      "image": "zukan/shokubutsu-03",
+      "credit": {
+        "author": "JW Stockert",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taraxacumlaevigatum.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-04",
+      "place": "shokubutsu",
+      "name": "ソメイヨシノ",
+      "reading": "そめいよしの",
+      "difficulty": 1,
+      "image": "zukan/shokubutsu-04",
+      "credit": {
+        "author": "Pseudopanax at English Wikipedia",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cherry_blossoms_(Prunus_x_yedoensis_%27Awanui%27)_with_dew_drops_close-up.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-05",
+      "place": "shokubutsu",
+      "name": "アサガオ",
+      "reading": "あさがお",
+      "difficulty": 1,
+      "image": "zukan/shokubutsu-05",
+      "credit": {
+        "author": "Alexis López Hernández",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "http://conabio.inaturalist.org/observations/469412",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-06",
+      "place": "shokubutsu",
+      "name": "アジサイ",
+      "reading": "あじさい",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-06",
+      "credit": {
+        "author": "Michele Dorsey Walfred",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:H._Macrophylla_%E2%80%9CSchnee_ball%E2%80%9D_German_for_snow_ball._Not_to_be_confused_with_Annabelle_or_viburnum_snowballs.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-07",
+      "place": "shokubutsu",
+      "name": "コスモス",
+      "reading": "こすもす",
+      "difficulty": 1,
+      "image": "zukan/shokubutsu-07",
+      "credit": {
+        "author": "Ricard Busquets Reverte",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/146969968",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-08",
+      "place": "shokubutsu",
+      "name": "バラ",
+      "reading": "ばら",
+      "difficulty": 1,
+      "image": "zukan/shokubutsu-08",
+      "credit": {
+        "author": "Laitche",
+        "license": "CC BY 3.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosa_Kardinal.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-09",
+      "place": "shokubutsu",
+      "name": "ユリ",
+      "reading": "ゆり",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-09",
+      "credit": {
+        "author": "Alexander Dubynin",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/49702343",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-10",
+      "place": "shokubutsu",
+      "name": "ハイビスカス",
+      "reading": "はいびすかす",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-10",
+      "credit": {
+        "author": "Andy / Andrew Fogg from near Cambridge, UK",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hibiscus_Brilliant.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-11",
+      "place": "shokubutsu",
+      "name": "スイセン",
+      "reading": "すいせん",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-11",
+      "credit": {
+        "author": "Zachi Evenor",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narcissus-tazetta-0006a.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-12",
+      "place": "shokubutsu",
+      "name": "シロツメクサ",
+      "reading": "しろつめくさ",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-12",
+      "credit": {
+        "author": "Tom Norton",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/221521630",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-13",
+      "place": "shokubutsu",
+      "name": "ナノハナ",
+      "reading": "なのはな",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-13",
+      "credit": {
+        "author": "Missvain",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brassica_rapa_-_April_2023_-_Sarah_Stierch_01.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-14",
+      "place": "shokubutsu",
+      "name": "スズラン",
+      "reading": "すずらん",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-14",
+      "credit": {
+        "author": "J V",
+        "license": "CC BY 4.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/119026283",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-15",
+      "place": "shokubutsu",
+      "name": "カーネーション",
+      "reading": "かーねーしょん",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-15",
+      "credit": {
+        "author": "Forest & Kim Starr",
+        "license": "CC BY 3.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_070730-7932_Dianthus_caryophyllus.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-16",
+      "place": "shokubutsu",
+      "name": "キク",
+      "reading": "きく",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-16",
+      "credit": {
+        "author": "iNaturalist の投稿者",
+        "license": "CC0 1.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/247473230",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-17",
+      "place": "shokubutsu",
+      "name": "ハス",
+      "reading": "はす",
+      "difficulty": 2,
+      "image": "zukan/shokubutsu-17",
+      "credit": {
+        "author": "Hong Zhang (jennyzhh2008)",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lotus_flower_(978659).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-18",
+      "place": "shokubutsu",
+      "name": "フジ",
+      "reading": "ふじ",
+      "difficulty": 3,
+      "image": "zukan/shokubutsu-18",
+      "credit": {
+        "author": "AnRo0002",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:20150506Wisteria_floribunda2.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-19",
+      "place": "shokubutsu",
+      "name": "オジギソウ",
+      "reading": "おじぎそう",
+      "difficulty": 3,
+      "image": "zukan/shokubutsu-19",
+      "credit": {
+        "author": "iNaturalist の投稿者",
+        "license": "CC0 1.0",
+        "source": "iNaturalist",
+        "sourceUrl": "https://www.inaturalist.org/observations/4878390",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "shokubutsu-20",
+      "place": "shokubutsu",
+      "name": "ハエトリグサ",
+      "reading": "はえとりぐさ",
+      "difficulty": 3,
+      "image": "zukan/shokubutsu-20",
+      "credit": {
+        "author": "ImagePerson",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venus_flytrap_(Dionaea_muscipula)_Zagreb_Botanical_Garden_1060.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "hoshi-01",
+      "place": "hoshi",
+      "name": "たいよう",
+      "reading": "たいよう",
+      "difficulty": 1,
+      "image": "zukan/hoshi-01",
+      "credit": {
+        "author": "NASA/SDO (AIA)",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-02",
+      "place": "hoshi",
+      "name": "ちきゅう",
+      "reading": "ちきゅう",
+      "difficulty": 1,
+      "image": "zukan/hoshi-02",
+      "credit": {
+        "author": "NASA Goddard Space Flight Center from Greenbelt, MD, USA",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NASA_Blue_Marble_2007_East_-_Flickr_-_NASA_Goddard_Photo_and_Video.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "hoshi-03",
+      "place": "hoshi",
+      "name": "すいせい",
+      "reading": "すいせい",
+      "difficulty": 2,
+      "image": "zukan/hoshi-03",
+      "credit": {
+        "author": "NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State University/Carnegie Institution of Washington",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercury_in_true_color.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-04",
+      "place": "hoshi",
+      "name": "きんせい",
+      "reading": "きんせい",
+      "difficulty": 2,
+      "image": "zukan/hoshi-04",
+      "credit": {
+        "author": "NASA/JPL-Caltech",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:PIA23791-Venus-RealAndEnhancedContrastViews-20200608_(cropped).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-05",
+      "place": "hoshi",
+      "name": "かせい",
+      "reading": "かせい",
+      "difficulty": 2,
+      "image": "zukan/hoshi-05",
+      "credit": {
+        "author": "Kevin Gill from Los Angeles, CA, United States",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "hoshi-06",
+      "place": "hoshi",
+      "name": "もくせい",
+      "reading": "もくせい",
+      "difficulty": 2,
+      "image": "zukan/hoshi-06",
+      "credit": {
+        "author": "NASA/STSCI (S.T.A.R.S)",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jupiter_OPAL_2024.png",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-07",
+      "place": "hoshi",
+      "name": "どせい",
+      "reading": "どせい",
+      "difficulty": 2,
+      "image": "zukan/hoshi-07",
+      "credit": {
+        "author": "NASA / JPL / Space Science Institute",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saturn_during_Equinox.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-08",
+      "place": "hoshi",
+      "name": "てんのうせい",
+      "reading": "てんのうせい",
+      "difficulty": 3,
+      "image": "zukan/hoshi-08",
+      "credit": {
+        "author": "NASA/JPL-Caltech",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uranus2.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-09",
+      "place": "hoshi",
+      "name": "かいおうせい",
+      "reading": "かいおうせい",
+      "difficulty": 3,
+      "image": "zukan/hoshi-09",
+      "credit": {
+        "author": "NASA",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neptune_Full.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-10",
+      "place": "hoshi",
+      "name": "まんげつ",
+      "reading": "まんげつ",
+      "difficulty": 1,
+      "image": "zukan/hoshi-10",
+      "credit": {
+        "author": "NASA/Bill Inglais",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Space_Shuttle_Discovery_under_a_full_moon,_03-11-09.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-11",
+      "place": "hoshi",
+      "name": "みかづき",
+      "reading": "みかづき",
+      "difficulty": 1,
+      "image": "zukan/hoshi-11",
+      "credit": {
+        "author": "Bautsch",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aschgraues.Mondlicht.P1162513.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-12",
+      "place": "hoshi",
+      "name": "ながれぼし",
+      "reading": "ながれぼし",
+      "difficulty": 1,
+      "image": "zukan/hoshi-12",
+      "credit": {
+        "author": "ESO/S. Guisard",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_2010_Perseids_over_the_VLT.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "hoshi-13",
+      "place": "hoshi",
+      "name": "ほうきぼし",
+      "reading": "ほうきぼし",
+      "difficulty": 1,
+      "image": "zukan/hoshi-13",
+      "credit": {
+        "author": "Leonhard Lenz",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:C2020_F3_NEOWISE_from_Berlin-Hakenfelde_2020-07-14_10.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-14",
+      "place": "hoshi",
+      "name": "あまのがわぎんが",
+      "reading": "あまのがわぎんが",
+      "difficulty": 2,
+      "image": "zukan/hoshi-14",
+      "credit": {
+        "author": "Anil Öztas",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ramsau_bei_Berchtesgaden_(DE),_Milchstra%C3%9Fe_%C3%BCber_Hochkalter_%26_Hintersee_--_2024_--_1018-50.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "hoshi-15",
+      "place": "hoshi",
+      "name": "オリオンざ",
+      "reading": "おりおんざ",
+      "difficulty": 2,
+      "image": "zukan/hoshi-15",
+      "credit": {
+        "author": "Igor da Bari",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Orion_Constellation.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "hoshi-16",
+      "place": "hoshi",
+      "name": "おおぐまざ",
+      "reading": "おおぐまざ",
+      "difficulty": 2,
+      "image": "zukan/hoshi-16",
+      "credit": {
+        "author": "Thomas Bresson",
+        "license": "CC BY 3.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-03-03_21-15-34-gde-casserole-5c-10f-10d-16o-ann.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    },
+    {
+      "id": "hoshi-17",
+      "place": "hoshi",
+      "name": "どせいのわ",
+      "reading": "どせいのわ",
+      "difficulty": 3,
+      "image": "zukan/hoshi-17",
+      "credit": {
+        "author": "Kevin M. Gill",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saturn_Rings_-_February_26_2016_(52705731265).png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "hoshi-18",
+      "place": "hoshi",
+      "name": "たいようのフレア",
+      "reading": "たいようのふれあ",
+      "difficulty": 3,
+      "image": "zukan/hoshi-18",
+      "credit": {
+        "author": "NASA Goddard Space Flight Center",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magnificent_CME_Erupts_on_the_Sun_-_August_31.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "hoshi-19",
+      "place": "hoshi",
+      "name": "かいきにっしょく",
+      "reading": "かいきにっしょく",
+      "difficulty": 3,
+      "image": "zukan/hoshi-19",
+      "credit": {
+        "author": "NASA",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solar_eclipse_taken_from_Artemis_II_-_April_2026.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "hoshi-20",
+      "place": "hoshi",
+      "name": "じんこうえいせい",
+      "reading": "じんこうえいせい",
+      "difficulty": 2,
+      "image": "zukan/hoshi-20",
+      "credit": {
+        "author": "Expedition 20 Crew, NASA",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soyuz_TMA-16_approaching_ISS.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "norimono-01",
+      "place": "norimono",
+      "name": "しょうぼうしゃ",
+      "reading": "しょうぼうしゃ",
+      "difficulty": 1,
+      "image": "zukan/norimono-01",
+      "credit": {
+        "author": "Syced",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ebisu_1_firetruck_4.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "norimono-02",
+      "place": "norimono",
+      "name": "はしごしゃ",
+      "reading": "はしごしゃ",
+      "difficulty": 2,
+      "image": "zukan/norimono-02",
+      "credit": {
+        "author": "Jackus2008 at English Wikipedia",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_Ladder_Platform_fire_truck_(London,_UK_-_2007).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "norimono-03",
+      "place": "norimono",
+      "name": "きゅうきゅうしゃ",
+      "reading": "きゅうきゅうしゃ",
+      "difficulty": 1,
+      "image": "zukan/norimono-03",
+      "credit": {
+        "author": "Ypy31",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saitama_Tobu_Fire_Bureau_Kyukyu_Saitama_Tobu_1_Toyota_Himedic_TRH226S.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "norimono-04",
+      "place": "norimono",
+      "name": "パトロールカー",
+      "reading": "ぱとろーるかー",
+      "difficulty": 1,
+      "image": "zukan/norimono-04",
+      "credit": {
+        "author": "Douglas Paul Perkins",
+        "license": "CC BY 3.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_police_car_1.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    },
+    {
+      "id": "norimono-05",
+      "place": "norimono",
+      "name": "ショベルカー",
+      "reading": "しょべるかー",
+      "difficulty": 1,
+      "image": "zukan/norimono-05",
+      "credit": {
+        "author": "Calle Eklund",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caterpillar_231D_LC_Tj%C3%A4rnan.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "norimono-06",
+      "place": "norimono",
+      "name": "ブルドーザー",
+      "reading": "ぶるどーざー",
+      "difficulty": 2,
+      "image": "zukan/norimono-06",
+      "credit": {
+        "author": "Anna Frodesiak",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:First_Tractor_Company_-_old_working_model_-_01.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "norimono-07",
+      "place": "norimono",
+      "name": "ダンプカー",
+      "reading": "だんぷかー",
+      "difficulty": 1,
+      "image": "zukan/norimono-07",
+      "credit": {
+        "author": "Noorse",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dumper_Truck.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "norimono-08",
+      "place": "norimono",
+      "name": "ミキサーしゃ",
+      "reading": "みきさーしゃ",
+      "difficulty": 2,
+      "image": "zukan/norimono-08",
+      "credit": {
+        "author": "Anfecaro",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Argos_Cement_Mixer.JPG",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "norimono-09",
+      "place": "norimono",
+      "name": "クレーンしゃ",
+      "reading": "くれーんしゃ",
+      "difficulty": 2,
+      "image": "zukan/norimono-09",
+      "credit": {
+        "author": "Artaxerxes",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boom_truck_Grove_Street_downtown_Brattleboro_VT_April_2024.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "norimono-10",
+      "place": "norimono",
+      "name": "フォークリフト",
+      "reading": "ふぉーくりふと",
+      "difficulty": 3,
+      "image": "zukan/norimono-10",
+      "credit": {
+        "author": "Hamed Malekpour",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Printing_houses_in_Tehran_-_11_March_2013_04.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "norimono-11",
+      "place": "norimono",
+      "name": "ごみしゅうしゅうしゃ",
+      "reading": "ごみしゅうしゅうしゃ",
+      "difficulty": 2,
+      "image": "zukan/norimono-11",
+      "credit": {
+        "author": "Syced",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meguro_incineration_plant.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "norimono-12",
+      "place": "norimono",
+      "name": "ゆうびんしゃ",
+      "reading": "ゆうびんしゃ",
+      "difficulty": 2,
+      "image": "zukan/norimono-12",
+      "credit": {
+        "author": "Ypy31",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hijetcargo.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "norimono-13",
+      "place": "norimono",
+      "name": "しんかんせん はやぶさ",
+      "reading": "しんかんせん はやぶさ",
+      "difficulty": 2,
+      "image": "zukan/norimono-13",
+      "credit": {
+        "author": "Alexander Klink",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:E5_Shinkansen_to_Hokkaido_at_Tokyo_Station.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "norimono-14",
+      "place": "norimono",
+      "name": "しんかんせん こまち",
+      "reading": "しんかんせん こまち",
+      "difficulty": 3,
+      "image": "zukan/norimono-14",
+      "credit": {
+        "author": "nubobo",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:E6%E7%B3%BB_%E6%96%B0%E5%B9%B9%E7%B7%9A_%E7%94%B2%E7%A8%AE%E8%BC%B8%E9%80%81_2013-08-24.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "norimono-15",
+      "place": "norimono",
+      "name": "ドクターイエロー",
+      "reading": "どくたーいえろー",
+      "difficulty": 3,
+      "image": "zukan/norimono-15",
+      "credit": {
+        "author": "nubobo",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Doctor_Yellow_at_Discover_Shinkansen_Day_2013.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "norimono-16",
+      "place": "norimono",
+      "name": "じょうききかんしゃ",
+      "reading": "じょうききかんしゃ",
+      "difficulty": 2,
+      "image": "zukan/norimono-16",
+      "credit": {
+        "author": "Karora",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:JA1271_crossing_the_Otaki_River.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "norimono-17",
+      "place": "norimono",
+      "name": "モノレール",
+      "reading": "ものれーる",
+      "difficulty": 2,
+      "image": "zukan/norimono-17",
+      "credit": {
+        "author": "Gary Lee Todd, Ph.D.",
+        "license": "CC0 1.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chiba_monorail,_Japan;_September_2016_(09).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "norimono-18",
+      "place": "norimono",
+      "name": "ジェットき",
+      "reading": "じぇっとき",
+      "difficulty": 2,
+      "image": "zukan/norimono-18",
+      "credit": {
+        "author": "Julian Herzog (Website)",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Air_China_Airbus_A330-243_B-6075_MUC_2015_01.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "norimono-19",
+      "place": "norimono",
+      "name": "ヘリコプター",
+      "reading": "へりこぷたー",
+      "difficulty": 1,
+      "image": "zukan/norimono-19",
+      "credit": {
+        "author": "Mfield - Matthew Field, http://www.photography.mattfield.com",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:LAPD_Bell_206_Jetranger.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "norimono-20",
+      "place": "norimono",
+      "name": "ロケット",
+      "reading": "ろけっと",
+      "difficulty": 1,
+      "image": "zukan/norimono-20",
+      "credit": {
+        "author": "Bill Ingalls",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soyuz_TMA-9_launch.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "kyoryu-01",
+      "place": "kyoryu",
+      "name": "ティラノサウルス",
+      "reading": "てぃらのさうるす",
+      "difficulty": 1,
+      "image": "zukan/kyoryu-01",
+      "credit": {
+        "author": "Nobu Tamura (http://spinops.blogspot.com)",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tyrannosaurus_BW.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "kyoryu-02",
+      "place": "kyoryu",
+      "name": "トリケラトプス",
+      "reading": "とりけらとぷす",
+      "difficulty": 1,
+      "image": "zukan/kyoryu-02",
+      "credit": {
+        "author": "Nobu Tamura (http://spinops.blogspot.com)",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triceratops_BW.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "kyoryu-03",
+      "place": "kyoryu",
+      "name": "ステゴサウルス",
+      "reading": "すてごさうるす",
+      "difficulty": 1,
+      "image": "zukan/kyoryu-03",
+      "credit": {
+        "author": "User:Slate Weasel",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stegosaurus_ungulatus_colored_final.png",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "kyoryu-04",
+      "place": "kyoryu",
+      "name": "ブラキオサウルス",
+      "reading": "ぶらきおさうるす",
+      "difficulty": 1,
+      "image": "zukan/kyoryu-04",
+      "credit": {
+        "author": "Nobu Tamura (http://spinops.blogspot.com)",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brachiosaurus_BW.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "kyoryu-05",
+      "place": "kyoryu",
+      "name": "プテラノドン",
+      "reading": "ぷてらのどん",
+      "difficulty": 1,
+      "image": "zukan/kyoryu-05",
+      "credit": {
+        "author": "TotalDino",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pteranodon_TD.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "kyoryu-06",
+      "place": "kyoryu",
+      "name": "アンキロサウルス",
+      "reading": "あんきろさうるす",
+      "difficulty": 2,
+      "image": "zukan/kyoryu-06",
+      "credit": {
+        "author": "Othenio Abel",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ankylosaurus;_from_Offensive_weapons_and_means_of_defense_of_fossil_vertebrates_(Abel_1908).png",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "kyoryu-07",
+      "place": "kyoryu",
+      "name": "スピノサウルス",
+      "reading": "すぴのさうるす",
+      "difficulty": 2,
+      "image": "zukan/kyoryu-07",
+      "credit": {
+        "author": "Palaeotaku",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spino_Fukuispecialexhibit01JH.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "kyoryu-08",
+      "place": "kyoryu",
+      "name": "ヴェロキラプトル",
+      "reading": "べろきらぷとる",
+      "difficulty": 2,
+      "image": "zukan/kyoryu-08",
+      "credit": {
+        "author": "Matt Martyniuk",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Velociraptor_dinoguy2.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "kyoryu-09",
+      "place": "kyoryu",
+      "name": "パキケファロサウルス",
+      "reading": "ぱきけふぁろさうるす",
+      "difficulty": 3,
+      "image": "zukan/kyoryu-09",
+      "credit": {
+        "author": "Fred Wierum",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pachycephalosaurus_Reconstruction.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "kyoryu-10",
+      "place": "kyoryu",
+      "name": "パラサウロロフス",
+      "reading": "ぱらさうろろふす",
+      "difficulty": 3,
+      "image": "zukan/kyoryu-10",
+      "credit": {
+        "author": "Leandra Walters, Phil Senter, James H. Robins",
+        "license": "CC BY 2.5",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parasaurolophus_walkeri.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.5/"
+      }
+    },
+    {
+      "id": "kyoryu-11",
+      "place": "kyoryu",
+      "name": "モササウルス",
+      "reading": "もささうるす",
+      "difficulty": 2,
+      "image": "zukan/kyoryu-11",
+      "credit": {
+        "author": "Dmitry Bogdanov",
+        "license": "Public Domain",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mosasaurus_21copy.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "kyoryu-12",
+      "place": "kyoryu",
+      "name": "フタバスズキリュウ",
+      "reading": "ふたばすずきりゅう",
+      "difficulty": 3,
+      "image": "zukan/kyoryu-12",
+      "credit": {
+        "author": "Kabacchi",
+        "license": "CC BY 2.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Futabasaurus.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "kyoryu-13",
+      "place": "kyoryu",
+      "name": "マンモス",
+      "reading": "まんもす",
+      "difficulty": 1,
+      "image": "zukan/kyoryu-13",
+      "credit": {
+        "author": "DataBase Center for Life Science (DBCLS)",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:202003_Woolly_mammoth.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "kyoryu-14",
+      "place": "kyoryu",
+      "name": "サーベルタイガー",
+      "reading": "さーべるたいがー",
+      "difficulty": 2,
+      "image": "zukan/kyoryu-14",
+      "credit": {
+        "author": "Dantheman9758 at English Wikipedia",
+        "license": "CC BY 3.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smilodon_fatalis.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    },
+    {
+      "id": "kyoryu-15",
+      "place": "kyoryu",
+      "name": "アルケオプテリクス",
+      "reading": "あるけおぷてりくす",
+      "difficulty": 2,
+      "image": "zukan/kyoryu-15",
+      "credit": {
+        "author": "DataBase Center for Life Science (DBCLS)",
+        "license": "CC BY 4.0",
+        "source": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:202010_Archaeopteryx_lithographica.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    }
+  ]
+}

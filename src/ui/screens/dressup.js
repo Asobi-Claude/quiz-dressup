@@ -6,7 +6,7 @@ import { picture, charImageNames, preload } from '../images.js';
 import { sparkleAt, flash } from '../effects.js';
 import { voice } from '../../audio/voice.js';
 import { sfx } from '../../audio/sfx.js';
-import { looksFor, isUnlocked, remainingFor } from '../../logic/unlock.js';
+import { looksFor, isUnlocked, remainingFor, lookPages, initialLookPage } from '../../logic/unlock.js';
 import { setWearing, totalCorrect } from '../../logic/progress.js';
 
 export function dressupScreen(app) {
@@ -14,6 +14,13 @@ export function dressupScreen(app) {
   const place = app.place(placeId);
   const looks = looksFor(app.game.looks, placeId, app.charId);
   const total = totalCorrect(app.progress, app.charId, placeId);
+  // ドレスは1ページ6着（3×2）。たくさんあるときは、◀ ▶ でページをめくる。開くときは、着ているドレスのページ
+  const pages = lookPages(looks);
+  // 新しいドレスが解放された直後は、そのドレスのページで開く（2ページ目以降でも、見つけやすい）。
+  // 「おひろめ」から戻ったときは、着ているドレスのページに戻れるよう、1回使ったら空にする
+  const newly = app.visit?.summary?.newly ?? [];
+  if (app.visit?.summary) app.visit.summary = { ...app.visit.summary, newly: [] };
+  let page = initialLookPage(looks, placeId, app.wearingLook(), newly);
   const witch = createWitch(app, { cls: 'witch-dress' });
   const tok = app.token;
   preload(looks.filter((l) => isUnlocked(l, total)).map((l) => l.image));
@@ -31,7 +38,8 @@ export function dressupScreen(app) {
     thumbs.forEach((t) => t.classList.toggle('is-wearing', !!look && t.dataset.look === look.id));
   }
 
-  const thumbs = looks.map((l) => {
+  let thumbs = []; // いまのページの6着（ページをめくると作り直す）
+  const makeThumb = (l) => {
     const open = isUnlocked(l, total);
     const rest = remainingFor(l, total);
     const btn = h('button', {
@@ -47,7 +55,29 @@ export function dressupScreen(app) {
       h('span', { class: 'thumb-rest' }, `あと${rest}もん`),
       stars(Math.min(rest, 9), 0, 'thumb-stars')));
     return btn;
-  });
+  };
+
+  const thumbsEl = h('div', { class: 'thumbs' });
+  const prevBtn = iconButton('◀', 'まえの ページ', () => turn(-1), 'pager-btn');
+  const nextBtn = iconButton('▶', 'つぎの ページ', () => turn(1), 'pager-btn');
+  const pageNum = h('span', { class: 'pager-num', 'aria-live': 'polite' });
+  const pager = pages.length > 1 ? h('div', { class: 'pager' }, prevBtn, pageNum, nextBtn) : null;
+
+  function renderThumbs() {
+    thumbs = (pages[page] ?? []).map(makeThumb);
+    thumbsEl.replaceChildren(...thumbs);
+    const wearing = app.wearingLook();
+    thumbs.forEach((t) => t.classList.toggle('is-wearing', !!wearing && t.dataset.look === wearing.id));
+    pageNum.textContent = `${page + 1} / ${pages.length}`;
+    prevBtn.disabled = page === 0;
+    nextBtn.disabled = page >= pages.length - 1;
+  }
+  function turn(d) {
+    const next = page + d;
+    if (next < 0 || next >= pages.length) return;
+    page = next;
+    renderThumbs();
+  }
 
   let changing = false;
   async function wear(look, btn) {
@@ -84,12 +114,14 @@ export function dressupScreen(app) {
 
   const ohiromeBtn = bigButton('📸', 'おひろめ', toOhirome, 'go ohirome');
 
-  const el = h('div', { class: 'dress-wrap' },
+  const el = h('div', { class: `dress-wrap ${pager ? 'has-pager' : ''}` },
     iconButton('🏠', 'マップに もどる', () => app.go('map'), 'home'),
     witch.el,
     figure,
-    h('div', { class: 'thumbs' }, thumbs),
+    thumbsEl,
+    pager,
     ohiromeBtn);
+  renderThumbs();
   renderFigure();
 
   return {

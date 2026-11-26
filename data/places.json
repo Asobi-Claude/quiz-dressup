@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "場所の定義。場所を足すときは、ここに1件足し、quizzes.json に問題、looks.json にルック、witch-lines.json の places にあいさつ、assets/ に画像を足す。map.x / map.y はマップ画面での位置（%）。enabled:false にすると、マップで「じゅんびちゅう」になり入れない。",
+  "note": "場所の定義。場所を足すときは、ここに1件足し、quizzes.json に問題、looks.json にルック、witch-lines.json の places にあいさつ、assets/ に画像を足す。map.x / map.y はマップ画面での位置（%）。enabled:false にすると、マップで「じゅんびちゅう」になり入れない。textQuiz:false は、文字のクイズ（quizzes.json）がなく、ずかんクイズだけの場所（ずかんが4種類以上いる）。",
   "characters": [
     {
       "id": "midori",
@@ -72,6 +72,42 @@
       "color": "#e28f6c",
       "map": { "x": 82, "y": 72 },
       "enabled": true
+    },
+    {
+      "id": "umi",
+      "name": "うみの すいぞくかん",
+      "genre": "うみ",
+      "theme": "にんぎょの ひめ",
+      "icon": "🐠",
+      "bg": "bg_umi",
+      "color": "#4aa3d8",
+      "map": { "x": 54, "y": 69 },
+      "enabled": true,
+      "textQuiz": false
+    },
+    {
+      "id": "norimono",
+      "name": "のりものの ひろば",
+      "genre": "のりもの",
+      "theme": "のりものの たいちょう",
+      "icon": "🚒",
+      "bg": "bg_norimono",
+      "color": "#e2574c",
+      "map": { "x": 37, "y": 52 },
+      "enabled": true,
+      "textQuiz": false
+    },
+    {
+      "id": "kyoryu",
+      "name": "きょうりゅうの たんけん",
+      "genre": "きょうりゅう",
+      "theme": "きょうりゅうの たんけんたい",
+      "icon": "🦕",
+      "bg": "bg_kyoryu",
+      "color": "#8a9a3b",
+      "map": { "x": 63, "y": 47 },
+      "enabled": true,
+      "textQuiz": false
     }
   ]
 }

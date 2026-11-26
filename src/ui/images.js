@@ -20,6 +20,39 @@ export function mayHave(name) {
   return !!name && (known ? known.has(name) : true);
 }
 
+// ---- ずかんの写真（assets/zukan/*.jpg） ----
+// ドレスなどの絵（.png）とは別。manifest.json には載せないので、manifest は見ない。
+let zukanVersion = 0; // data/zukan.json の version。写真を入れ替えたら上げる（オフライン用の保存を新しくするため）
+
+export function setZukanVersion(v) {
+  zukanVersion = Number.isInteger(v) ? v : 0;
+}
+
+export function photoUrl(path) {
+  return `${ASSET_DIR}${path}.jpg${zukanVersion ? `?v=${zukanVersion}` : ''}`;
+}
+
+/**
+ * ずかんの写真を出す。読めなかったら、「？」だけのプレースホルダー。
+ * 名前や写真のファイル名は出さない（出すと、写真を当てるクイズの答えがわかってしまう）。
+ * opts: { label（読み上げ用。答えの名前は渡さない）, kind, cls }
+ * 戻り値の .dataset.image に、写真の path が入る（プレースホルダーなら空）。
+ */
+export function photo(path, opts = {}) {
+  const wrap = h('div', { class: `pic pic-${opts.kind ?? 'zukan'} ${opts.cls ?? ''}` });
+  const showPlaceholder = () => {
+    wrap.replaceChildren(h('div', { class: 'ph ph-zukan', role: 'img', 'aria-label': opts.label ?? '？' },
+      h('span', { class: 'ph-mark' }, '？')));
+    wrap.dataset.image = '';
+    wrap.classList.add('is-ph');
+  };
+  const img = h('img', { src: photoUrl(path), alt: opts.label ?? '', draggable: 'false' });
+  img.addEventListener('error', showPlaceholder, { once: true });
+  wrap.appendChild(img);
+  wrap.dataset.image = path;
+  return wrap;
+}
+
 function hue(str) {
   let x = 0;
   for (const ch of String(str)) x = (x * 31 + ch.codePointAt(0)) % 360;

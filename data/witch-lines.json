@@ -149,6 +149,18 @@
     "ryori": {
       "normal": [{ "text": "おいしい においが する キッチンよ。", "face": "normal" }],
       "hiichan": [{ "text": "あまくて おいしい においが するわね。", "face": "warai" }]
+    },
+    "umi": {
+      "normal": [{ "text": "うみの なかまたちが およぐ すいぞくかんよ。", "face": "normal" }],
+      "hiichan": [{ "text": "おさかなが いっぱい およいで いるわね。", "face": "warai" }]
+    },
+    "norimono": {
+      "normal": [{ "text": "ぶーぶー ガタンゴトン、のりものが あつまる ひろばよ。", "face": "normal" }],
+      "hiichan": [{ "text": "かっこいい のりものが いっぱい いるわね。", "face": "warai" }]
+    },
+    "kyoryu": {
+      "normal": [{ "text": "おおむかしの きょうりゅうが いる たんけんの もりよ。", "face": "normal" }],
+      "hiichan": [{ "text": "おおきな きょうりゅうが いるわよ。", "face": "warai" }]
     }
   }
 }

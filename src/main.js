@@ -3,14 +3,17 @@ import { loadData } from './data.js';
 import { createStore, getWearing, totalsByPlace, setSetting } from './logic/progress.js';
 import { resolveWearing } from './logic/unlock.js';
 import { modeOf } from './logic/game.js';
-import { setManifest, background } from './ui/images.js';
+import { setManifest, setZukanVersion, background } from './ui/images.js';
 import { voice } from './audio/voice.js';
 import { sfx } from './audio/sfx.js';
-import { h } from './ui/dom.js';
+import { h, markNavigation } from './ui/dom.js';
 import { titleScreen } from './ui/screens/title.js';
 import { mapScreen } from './ui/screens/map.js';
 import { entranceScreen } from './ui/screens/entrance.js';
+import { chooseScreen } from './ui/screens/choose.js';
+import { levelScreen } from './ui/screens/level.js';
 import { quizScreen } from './ui/screens/quiz.js';
+import { zukanQuizScreen } from './ui/screens/zukanQuiz.js';
 import { rewardScreen } from './ui/screens/reward.js';
 import { dressupScreen } from './ui/screens/dressup.js';
 import { ohiromeScreen } from './ui/screens/ohirome.js';
@@ -19,7 +22,10 @@ const SCREENS = {
   title: titleScreen,
   map: mapScreen,
   entrance: entranceScreen,
+  choose: chooseScreen,
+  level: levelScreen,
   quiz: quizScreen,
+  zukanQuiz: zukanQuizScreen,
   reward: rewardScreen,
   dressup: dressupScreen,
   ohirome: ohiromeScreen,
@@ -89,6 +95,7 @@ class App {
     const bgEl = background(screen.bg?.name ?? 'bg_title', { color: screen.bg?.color });
     const scr = h('div', { class: `screen screen-${name} mode-${this.mode}` }, bgEl, screen.el);
     this.stage.replaceChildren(scr);
+    markNavigation(); // 切り替えた直後の連打が、新しい画面のボタンに届かないように
     this.stage.dataset.screen = name;
     // 舞台の外（すきま）にも同じ背景をぼかして敷く
     this.backdrop.replaceChildren(bgEl.cloneNode(true));
@@ -110,6 +117,7 @@ async function boot() {
     return;
   }
   setManifest(game.assetsManifest);
+  setZukanVersion(game.zukanVersion);
   voice.setRecordedMap(game.voiceMap);
   const app = new App(game, createStore(window.localStorage));
   window.__app = app; // 動作確認用

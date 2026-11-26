@@ -4,6 +4,7 @@ import { bigButton, holdButton } from '../common.js';
 import { resetChar } from '../../logic/progress.js';
 import { voice } from '../../audio/voice.js';
 import { sfx } from '../../audio/sfx.js';
+import { openCredits } from './credits.js';
 
 const ITEMS = [
   { key: 'sfx', icon: '🔔', label: 'こうかおん' },
@@ -46,12 +47,19 @@ export function openSettings(app) {
     app.go('map');
   }, 'danger');
 
+  // 写真の作者の一覧（子どもが開かないよう、3秒長押し）
+  const credits = holdButton('しゃしんの さくしゃ（3びょう ながおし）', 3000, () => {
+    close();
+    openCredits(app);
+  }, 'neutral');
+
   const wrap = h('div', { class: 'modal settings' },
     h('div', { class: 'modal-card settings-card' },
       h('h2', { class: 'settings-title' }, 'せってい'),
       h('div', { class: 'toggles' }, toggles),
       h('div', { class: 'settings-adult' },
         h('p', { class: 'settings-note' }, 'おとなの ひとへ'),
+        credits,
         reset,
         notes.map((n) => h('p', { class: 'settings-note small' }, n))),
       bigButton('✅', 'とじる', close, 'close')));
