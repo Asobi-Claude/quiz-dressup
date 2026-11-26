@@ -102,8 +102,9 @@ class App {
     this.stage.replaceChildren(scr);
     markNavigation(); // 切り替えた直後の連打が、新しい画面のボタンに届かないように
     this.stage.dataset.screen = name;
-    // 舞台の外（すきま）にも同じ背景をぼかして敷く
-    this.backdrop.replaceChildren(bgEl.cloneNode(true));
+    // 舞台の外（タブレットが 16:9 でないときの上下のすきま）は、その画面の色のやさしい無地にする
+    this.backdrop.replaceChildren();
+    this.backdrop.style.background = `color-mix(in srgb, ${screen.bg?.color ?? '#cfe6f5'} 40%, white)`;
     screen.enter?.();
   }
 }
